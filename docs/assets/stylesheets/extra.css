@@ -1,0 +1,30 @@
+:root {
+  --md-primary-fg-color: #4338ca;
+  --md-primary-fg-color--light: #6366f1;
+  --md-primary-fg-color--dark: #312e81;
+  --md-accent-fg-color: #7c3aed;
+}
+
+.md-header {
+  background: linear-gradient(90deg, #0b1f5b, #4338ca 55%, #6d28d9);
+}
+
+.md-tabs {
+  background: #11102f;
+}
+
+.md-main__inner {
+  max-width: 1500px;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+}
+
+.md-typeset h2 {
+  color: #312e81;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #c4b5fd;
+}
