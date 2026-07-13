@@ -5,16 +5,20 @@ site_author: Conecta
 theme:
   name: material
   language: pt-BR
+  logo: material/clock-check-outline
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
     - navigation.footer
+    - navigation.indexes
     - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
   palette:
     - scheme: default
       primary: indigo
@@ -55,6 +59,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
 
@@ -75,6 +82,17 @@ nav:
           - Visão do Produto: product-book/volume-01-arquitetura/01-visao-do-produto.md
           - Arquitetura Geral: product-book/volume-01-arquitetura/02-arquitetura-geral.md
           - Arquitetura Funcional: product-book/volume-01-arquitetura/03-arquitetura-funcional.md
+          - Modelo de Domínio: product-book/volume-01-arquitetura/04-modelo-de-dominio.md
+          - Mapa Mestre do Produto: product-book/volume-01-arquitetura/05-mapa-mestre-do-produto.md
+          - Context Map: product-book/volume-01-arquitetura/06-context-map.md
+          - Catálogo de Entidades: product-book/volume-01-arquitetura/07-catalogo-de-entidades.md
+          - Banco Conceitual: product-book/volume-01-arquitetura/08-banco-de-dados-conceitual.md
+          - Arquitetura Corporativa: product-book/volume-01-arquitetura/09-arquitetura-corporativa.md
+          - Arquitetura Funcional Detalhada: product-book/volume-01-arquitetura/10-arquitetura-funcional-detalhada.md
+          - Arquitetura Técnica: product-book/volume-01-arquitetura/11-arquitetura-tecnica.md
+          - Segurança por Design: product-book/volume-01-arquitetura/12-seguranca-por-design.md
+          - Permissões e Segregação: product-book/volume-01-arquitetura/13-permissoes-e-segregacao.md
+          - Auditoria e Rastreabilidade: product-book/volume-01-arquitetura/14-auditoria-e-rastreabilidade.md
       - Volume II — Especificação Funcional: product-book/volume-02-especificacao-funcional/index.md
       - Volume III — UX/UI: product-book/volume-03-ux-ui/index.md
       - Volume IV — Desenvolvimento: product-book/volume-04-desenvolvimento/index.md
@@ -85,5 +103,12 @@ nav:
   - ADRs:
       - Visão Geral: adr/index.md
       - ADR-001 — Nome do Produto: adr/adr-001-nome-do-produto.md
+      - ADR-002 — Multiempresa: adr/adr-002-multiempresa.md
+      - ADR-003 — Fonte Única de Dados: adr/adr-003-fonte-unica-de-dados.md
+      - ADR-004 — Auditoria Imutável: adr/adr-004-auditoria-imutavel.md
+      - ADR-005 — API First: adr/adr-005-api-first.md
+      - ADR-006 — Eventos de Domínio: adr/adr-006-eventos-de-dominio.md
+      - ADR-007 — RBAC com Escopo: adr/adr-007-rbac-com-escopo.md
+      - ADR-008 — Fechamento Imutável: adr/adr-008-fechamento-imutavel.md
   - Roadmap: roadmap/index.md
   - Glossário: glossario/index.md

@@ -1,20 +1,12 @@
-# Conecta Gestão de Jornada
+# Sprint 1.2 — Arquitetura Corporativa e Segurança
 
-Portal oficial de documentação do produto.
+Conteúdo desta entrega:
 
-## Rodar localmente
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-mkdocs serve
-```
-
-Acesse `http://127.0.0.1:8000`.
-
-## Publicar
-
-```bash
-mkdocs gh-deploy
-```
+- Arquitetura corporativa
+- Arquitetura funcional detalhada
+- Arquitetura técnica
+- Segurança por design
+- Permissões e segregação
+- Auditoria e rastreabilidade
+- ADRs 005 a 008
+- Atualização do menu do portal
